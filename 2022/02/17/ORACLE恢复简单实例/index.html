@@ -6,20 +6,28 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://larkwenhua.github.io">
-  <title>hello world | 鱼的记忆</title>
+  <title>ArcSDE 的介绍和使用 | 鱼的记忆</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="记录生活点滴">
+  <meta name="description" content="数据库的备份主要分为三种类型：冷备份;热备份;逻辑备份;数据库的备份不是本文讨论的重点，在这里只作一个概要的介绍，Oracle数据库备份主要有：Cold?Backup(冷备份)主要指在关闭数据库的状态下进行的数据库完全备份，备份内容包括所有数据文件、控制文件、联机日志文件、ini文件。Hot Backup(热备份) 指在数据库处于运行状态下，对数据文件和控制文件进行备份，要使用热备份必须将数据库运">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hello world">
-<meta property="og:url" content="https://larkwenhua.github.io/2022/02/17/hello-world-1/index.html">
+<meta property="og:title" content="ArcSDE 的介绍和使用">
+<meta property="og:url" content="https://larkwenhua.github.io/2022/02/17/ORACLE%E6%81%A2%E5%A4%8D%E7%AE%80%E5%8D%95%E5%AE%9E%E4%BE%8B/index.html">
 <meta property="og:site_name" content="鱼的记忆">
-<meta property="og:description" content="记录生活点滴">
+<meta property="og:description" content="数据库的备份主要分为三种类型：冷备份;热备份;逻辑备份;数据库的备份不是本文讨论的重点，在这里只作一个概要的介绍，Oracle数据库备份主要有：Cold?Backup(冷备份)主要指在关闭数据库的状态下进行的数据库完全备份，备份内容包括所有数据文件、控制文件、联机日志文件、ini文件。Hot Backup(热备份) 指在数据库处于运行状态下，对数据文件和控制文件进行备份，要使用热备份必须将数据库运">
 <meta property="og:locale">
-<meta property="article:published_time" content="2022-02-17T04:21:25.000Z">
-<meta property="article:modified_time" content="2022-02-17T04:21:25.519Z">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190408155401815.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzE5NzgyNjk3,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2019040815550222.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzE5NzgyNjk3,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190408155510906.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzE5NzgyNjk3,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190408155630598.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190408155638515.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190408155735432.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzE5NzgyNjk3,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190408155808300.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzE5NzgyNjk3,size_16,color_FFFFFF,t_70">
+<meta property="article:published_time" content="2022-02-17T07:40:22.000Z">
+<meta property="article:modified_time" content="2022-02-17T08:03:44.837Z">
 <meta property="article:author" content="larkwenhua">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20190408155401815.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzE5NzgyNjk3,size_16,color_FFFFFF,t_70">
   
     <link rel="alternative" href="/atom.xml" title="鱼的记忆" type="application/atom+xml">
   
@@ -189,14 +197,14 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world-1" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-ORACLE恢复简单实例" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
   
   
     <h1 class="article-title" itemprop="name">
-      hello world
+      ArcSDE 的介绍和使用
     </h1>
   
 
@@ -208,8 +216,8 @@
               <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
         </span>
 
-<a href="/2022/02/17/hello-world-1/" class="archive-article-date">
-        <time datetime="2022-02-17T04:21:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-02-17</time>
+<a href="/2022/02/17/ORACLE%E6%81%A2%E5%A4%8D%E7%AE%80%E5%8D%95%E5%AE%9E%E4%BE%8B/" class="archive-article-date">
+        <time datetime="2022-02-17T07:40:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-02-17</time>
 </a>
 
   
@@ -218,7 +226,22 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    
+    <p>数据库的备份主要分为三种类型：冷备份;热备份;逻辑备份;<br>数据库的备份不是本文讨论的重点，在这里只作一个概要的介绍，Oracle数据库备份主要有：<br>Cold?Backup(冷备份)<br>主要指在关闭数据库的状态下进行的数据库完全备份，备份内容包括所有数据文件、控制文件、联机日志文件、ini文件。<br>Hot Backup(热备份)<br> 指在数据库处于运行状态下，对数据文件和控制文件进行备份，要使用热备份必须将数据库运行在(Archive Log)归档方式下。<br>Export(逻辑备份)<br>这是最简单的备份方法，可按数据库中某个表、某个用户或整个数据库来导出，并且支持全部、累计、增量三种方式。使用这种方法，数据库必须处于打开状态，而且如果数据库不是在restrict状态将不能保证导出数据的一致性。</p>
+<p>数据库的恢复可分为两大类：完全恢复;不完全恢复;<br>完全恢复指将数据库恢复到发生故障的时间点，不丢失任何数据。不完全恢复指将数据库恢复到发生故障前的某一个时间点，此时间点以后的所有改动将会丢失。如果没有特殊需求，我们建议应尽量使用完全恢复。</p>
+<p>将源数据库日志文件、控制文件、数据文件 复制并替换。替换之前，关闭数据库。shutdown immediate;<br><img src="https://img-blog.csdnimg.cn/20190408155401815.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzE5NzgyNjk3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>flash_recovery_area 文件里有第二个控制文件，与闪回有关。<br>database里存实例初始化、用户信息相关文件。</p>
+<p><img src="https://img-blog.csdnimg.cn/2019040815550222.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzE5NzgyNjk3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20190408155510906.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzE5NzgyNjk3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br><strong>oracle启动</strong>分为三步：</p>
+<p>nomount –根据参数文件启动实例（instance）————————initorcl.ora<br>Nomount(非安装)Oracle只是读取ini文件中的配置信息，并初始化SGA区。</p>
+<pre><code>CREATE pfile=&#39;c:\initorcl.ora&#39; from spfile=&#39;D:\app\Administrator\product\11.2.0\dbhome_1\database\SPFILEMYDB.ORA&#39;;
+startup pfile=&#39;c:\initorcl.ora&#39; 开启实例
+</code></pre>
+<p>init.ora.102123312 文件为二进制文件，切不可修改其内容。<br><img src="https://img-blog.csdnimg.cn/20190408155630598.png" alt="在这里插入图片描述"><img src="https://img-blog.csdnimg.cn/20190408155638515.png" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20190408155735432.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzE5NzgyNjk3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>解决办法： 将数据文件移到指定目录；删除相应表空间。</p>
+<p><img src="https://img-blog.csdnimg.cn/20190408155808300.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzE5NzgyNjk3,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"><br>解决办法：删除错误的控制文件。</p>
+<p>mount –加载控制文件，让实例和数据库相关联———————— 控制文件（.ctl）<br>Mount(安装)Oracle除了需要读取ini文件还要读取控制文件，并从中获取有关数据库的物理结构等信息。</p>
+<p>控制文件<br>  控制文件中记录着整个数据库的结构、每个数据文件的状况、系统SCN、检查点计数器等重要信息，在创建数据库时会让用户指定三个位置来存放控制文件，他们之间互为镜像，当其中任何一个发生故障，只需将其从ini文件中注释掉故障数据文件就可重新将数据启动。当所有控制全部失效时，可以在Nomount模式下执行create controlfile来重新生成控制文件，但必须提供redo log，data file，文件名和地址以及MAXLOGFILES，MAXDATAFILES，MAXINSTANCES等信息。如果失败之前运行过alter database backup controlfile to trace或alter database backup controlfile to ‘xxx’对控制文件作备份，恢复时可使用生成的脚本来重建或用备份文件覆盖，如果使用了旧的控制文件在恢复时要使用recover xxx using backup controlfile选项来进行恢复，并使用resetlogs选项来打开数据库。</p>
+<p>open –根据控制文件找到并打开数据文件和日志文件，从而打开数据库————————日志文件、数据文件<br>pen(打开)数据库要检查所有文件处于同一时间点，对错误进行恢复对未完成事务回滚，并最终可以允许用户访问。</p>
+<p>日志文件<br>如果丢失的是联机日志文件，分两种情况处理1、丢失的是非活动的日志文件;2、丢失的是当前激活的日志文件。<br>如果是第一种情况，而发生故障的日志文件组又具有多个成员，可以先将数据库shutdown，然后用操作系统命令将损坏日志文件组中好的日志成员文件把损坏的成员文件覆盖(在同一个日志成员组中的所有日志文件的各为镜象的)，如果其物理位置不可用可将其拷贝到新的驱动器上，使用alter database rename file ‘xxxx’ to ‘xxxx’改变文件位置，之后启动数据库，如果正常马上进行一个冷备份。如果损坏的日志组中只有一个日志成员，先mount上数据库，将其转换为noarchivelog模式，执行alter database add logfile member ‘xxx’ to group ‘x’给相关组增加一个成员，再执行alter database drop logfile member ‘bad_file’将损坏的日志文件删除，由于数据库的结构发生变动需要备份控制文件，之后将数据库改回archivelog模式，做一个冷备份。<br>   如果丢失的是当前激活的日志文件，数据库又没有镜像而且当前日志组中所有成员均变为不可用。首先将数据库shutdown abort，从最近的一次全备份中恢复所有的数据文件，将数据库启动到mount状态。如果原来的日志文件物理位置不可用，使用alter database rename file ‘xxx’ to ‘xxx’改变文件的存放位置。然后，使用recover database until cancel命令来恢复数据库，直到提示最后一个归档日志运用完之后，输入cancel。之后用alter database open resetlogs打开数据库，如果没有问题，立即进行一个冷备份。注意!所有包含在损坏的redo log中的信息将会丢失，也就是说数据库崩溃前已经提交的数据有可能会丢失。这对于某些要求很高的应用将会损失惨重，因此应尽量使每个日志组具有多个日志成员，并且放置在不同的驱动器上一防止发生介质故障。</p>
+<p>数据文件<br>数据文件发生故障的情况也分为多种情况，1、丢失包含在SYSTEM表空间的数据文件;2、丢失没有回滚段的非SYSTEM数据文件;3、丢失有回滚段的非SYSTEM数据文件。<br>如果损坏的是系统表空间的数据文件。唯一的办法是从上一次备份中恢复受损的数据文件，(<em>如果原位置不可用使用alter database rename命令改变新文件的位置</em>)，之后在数据库mount的状态下执行recover database/datafile对数据库进行回复，才能将数据库打开。注意：当SYSTEM表空间或其中的数据文件脱机，数据库是无法被打开的，因此必须在mount状态下将所有的恢复工作完成。<br>当丢失的数据文件不属于系统表空间而且也不包含回滚段时，有可选择在数据库的两种状态下进行恢复—在数据库open的状态或者在数据库mount的状态。如果用户急于访问数据库中未受损部分的数据或对损坏的数据文件进行恢复需要很长时间，可以先使受损的数据文件脱机，将数据库打开给用户访问，再恢复受损的数据文件最后将其联机。步骤如下：先在数据库mount时，将相关的数据文件或表空间进行脱机alter database datafile xxx offline，然后将数据库open，这样就能使数据库未受损的部分先供用户访问，之后再进行recover datafile/tablespace，完成后用alter database datafile/tablespace ‘xxx’ online使其恢复联机就可被访问了。 当然用户也可以选择在数据库mount状态下，用recover database/datafile将所有的恢复工作做完，将所有数据文件一起打开供用户访问。<br>如果丢失的数据文件是最后一种情况，即包含有回滚段的非系统表空间数据文件。也可以选择是在数据库先open的状态还是在mount状态下恢复。不过与上一种情况不同的是当包含回滚段的数据文件损坏时，如果使其先offline将数据库打开，那么所有数据库崩溃前未提交的事务涉及到的表将无法访问，也就是说在回滚段恢复前其中涉及的对象都不允许被访问。而且当所有包含回滚段的数据文件都在offline状态时，数据库无法进行任何DML操作，因此在数据库open状态恢复包含回滚段的数据文件时，可以先创建几个临时回滚段供数据使用create rollback segment temp1 tablespace system; alter rollback segment temp1 online;，当数据文件恢复后再将他们删除alter rollback segment temp1 offline; drop rollback segment temp1;。注意：当用这种方法使恢复的数据文件online之后，所有的原有回滚段将处于offline状态，必须手工使用alter rollback segment RBSxx online;使他们恢复联机状态，这样才能被数据库正常使用。如果在数据库mount状态下完成所有恢复，则不需要上述步骤。<br>如果丢失数据文件后，用户发现没有故障前的数据文件的备份，而且自从丢失的数据文件最早建立之后一直没有使用过resetlogs选项打开过数据库。也就是说用户的控制文件是在损坏的数据文件建立前创建的，归档日志中包括对损坏数据文件的所有重做记录。用户就还有一种恢复方法，用户可以先将损坏的数据文件或表空间脱机alter database datafile / tablespace xxx offline，之后执行alter database create datafile ‘new/xxx.dbf’ as ‘old/xxx.dbf’，数据库会根据保存在控制文件中的信息重建一个空的数据文件，之后再执行recover tablespace / datafile将所有重做记录运用到数据文件，使其完全恢复到当前状态，之后便可再将其恢复联机。<br>如果丢失的是最后一种文件—归档文件或归档文件所处的物理位置不可用，首先shutdown数据库，立即作一个冷备份。然后修改ini文件中的归档日志文件目的路径，重新启动数据库。以后再发生灾难只需从最新的备份中将相关文件恢复，数据库作recover时就不需要备份之前丢失的归档文件了。在Oracle 8之后的新版本中提供了log_archive_duplex_dest和log_archive_dest_1…5等参数允许保留多份归档文件到不同位置，甚至到远端服务器从而保证归档文件的可靠性。</p>
+
     
 
     
@@ -264,7 +287,7 @@
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="https://larkwenhua.github.io/2022/02/17/hello-world-1/" title="hello world" target="_blank">https://larkwenhua.github.io/2022/02/17/hello-world-1/</a>
+          <a href="https://larkwenhua.github.io/2022/02/17/ORACLE恢复简单实例/" title="ArcSDE 的介绍和使用" target="_blank">https://larkwenhua.github.io/2022/02/17/ORACLE恢复简单实例/</a>
         </li>
         <li>
           <strong>版权声明： </strong>
@@ -328,7 +351,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://larkwenhua.github.io/2022/02/17/hello-world-1/" alt="微信分享二维码"> -->
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=https://larkwenhua.github.io/2022/02/17/ORACLE%E6%81%A2%E5%A4%8D%E7%AE%80%E5%8D%95%E5%AE%9E%E4%BE%8B/" alt="微信分享二维码"> -->
     </div>
 </div>
 
